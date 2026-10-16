@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - applicationset-exo-platform.yaml
+  - application-argocd.yaml
+  - application-headlamp.yaml
+  - bootstrap-application.yaml
+  - github-argocd-apps-repo-secret.yaml
