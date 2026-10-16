@@ -21,7 +21,7 @@ spec:
       project: default
       source:
         repoURL: git@github.com:ursusmaritimus01/colink-exo-26-deploy.git
-        targetRevision: HEAD
+        targetRevision: develop
         path: exo-platform-breda/k8s/overlays
         directory:
           recurse: false
