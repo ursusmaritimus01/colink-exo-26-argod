@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: git@github.com:ursusmaritimus01/colink-exo-26-argod.git
     targetRevision: develop
-    path: /argocd-apps
+    path: argocd-apps
     # kustomization.yaml aanwezig → ArgoCD detecteert Kustomize automatisch
   destination:
     server: https://kubernetes.default.svc
