@@ -10,6 +10,12 @@ spec:
           - cluster: hetzner-breda
             url: https://kubernetes.default.svc
             environment: production
+            namespace: colink-exo-26-breda
+            host: 178-105-174-203.sslip.io
+          - cluster: hetzner-breda
+            url: https://kubernetes.default.svc
+            environment: develop
+            namespace: colink-exo-26-breda-develop
             host: 178-105-174-203.sslip.io
   template:
     metadata:
@@ -22,10 +28,10 @@ spec:
       source:
         repoURL: git@github.com:ursusmaritimus01/colink-exo-26-deploy.git
         targetRevision: develop
-        path: exo-platform-breda/k8s/overlays/exo-platform/exo-platform-production
+        path: exo-platform-breda/k8s/overlays/exo-platform/exo-platform-{{environment}}
       destination:
         server: "{{url}}"
-        namespace: colink-exo-26-breda
+        namespace: "{{namespace}}"
       syncPolicy:
         automated:
           prune: true
