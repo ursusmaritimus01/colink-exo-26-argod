@@ -22,9 +22,7 @@ spec:
       source:
         repoURL: git@github.com:ursusmaritimus01/colink-exo-26-deploy.git
         targetRevision: develop
-        path: exo-platform-breda/k8s/overlays/exo-platform
-        directory:
-          recurse: false
+        path: exo-platform-breda/k8s/overlays/exo-platform/exo-platform-production
       destination:
         server: "{{url}}"
         namespace: colink-exo-26-breda
