@@ -7,3 +7,4 @@ resources:
   - application-headlamp.yaml
   - bootstrap-application.yaml
   - github-argocd-apps-repo-secret.yaml
+  - github-deploy-repo-secret.yaml
